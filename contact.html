@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+
+        nav {
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: underline;
+        }
+
+        nav a:hover {
+            background-color: red;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        a:hover {
+            background-color: red;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        button {
+            background-color: lightgrey;
+            border: 4px solid black;
+            border-radius: 4px;
+            color: black;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.2s;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="http://127.0.0.1:5500/Personal_Portfolio.html">Home</a>
+        <a href="http://127.0.0.1:5500/about.html">About</a>
+        <a href="http://127.0.0.1:5500/resume.html">Resume</a>
+        <a href="http://127.0.0.1:5500/blog.html">Blog</a>
+        <a href="http://127.0.0.1:5500/portfolio.html">Portfolio</a>
+        <a href="http://127.0.0.1:5500/contact.html">Contact</a>    
+    </nav>
+
+    <hr>
+
+    <section>
+    <h2>Contact</h2>
+
+    <table>
+       
+        <tr>
+            <td>Phone:</td>
+            <td>828-345-0000</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>jes@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Link:</td>
+            <td><a href="https://www.linkedin.com/in/jesmarie-vargas-014a72190/" target="_blank">LinkedIn</a></td>
+        </tr>
+    </table>
+    </section>
+
+    <section>
+
+    <h3>Please fill out form below if you cannot reach me via Contact Information.</h3>
+
+    <form action="submit">
+        <label>Name:<input type="text" name= "name" id="name"></input></label><br><br>
+        <label>Number:<input type="text" pattern= [0-9]{10} name= "phone" id="phone"></input></label><br></br>
+        <label>Email:<input type="email" name= "email" id="email"></input></label><br></br>
+        <label>Comments:<textarea name= "comments" id="comments" rows=4" cols="50"></textarea></label><br></br>
+        <button>Submit</button>
+    </form>
+
+    </section>
+</body>
+</html>

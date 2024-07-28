@@ -1,0 +1,12 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua;
+}
+
+nav, section {
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for layering effect */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
